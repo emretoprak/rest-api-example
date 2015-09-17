@@ -61,7 +61,7 @@ public class HttpResponse {
 
     public static Response getValidationFAIL(ValidationException e) {
         JSONObject response = new JSONObject();
-        String message = "Validasyon Hatası:";
+        String message = "Validation error:";
         List<String> messages = e.getMessages();
         for (String s : messages) {
             message += s + "\r\n";
